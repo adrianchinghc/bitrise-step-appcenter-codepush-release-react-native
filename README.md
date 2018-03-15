@@ -1,6 +1,6 @@
-# AppCenter CodePush Release React Native Android
+# AppCenter CodePush Release React Native
 
-Utilise appcenter-cli command appcenter codepush release-react to release an update to android app
+Utilise appcenter-cli command appcenter codepush release-react to release an update
 
 
 ## How to use this Step
