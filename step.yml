@@ -56,13 +56,13 @@ inputs:
         AppCenter API Token can be obtained from [here]](https://appcenter.ms/settings/apitokens).
         New API Token > Enter a description for the token > Select Full Access > Add New API Token
       is_required: true
-  - env: $ENVIRONMENT
+  - env: 'prod'
     opts:
       title: Environment
       description: |
         Choices for environments [here](https://github.com/Microsoft/appcenter-cli/blob/61bd72c1dcabeb876ee14fcaa316fd6b367b49a6/src/commands/codepush/lib/environment.ts#L18)
       is_required: true
-  - options: $OPTIONS
+  - options: 
     opts:
       title: Extra Options
       description: |
