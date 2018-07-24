@@ -19,6 +19,6 @@ if [ ! -z "${react_native_project_root}" ] ; then
     fi
 fi
 
-appcenter codepush release-react -a $app_id --token $api_token --quiet $options --env $env
+appcenter codepush release-react -a $app_id --token $api_token --quiet $options --deployment-name $deployment
 
 exit 0
