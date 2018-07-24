@@ -18,7 +18,7 @@ workflows:
         - api_token: $APPCENTER_API_TOKEN
         - app_id: $APPCENTER_APP_ID
         - react_native_project_root: $REACT_NATIVE_PROJECT_ROOT
-        - environment: $ENVIRONMENT
+        - deployment: $DEPLOYMENT_NAME
   audit-this-step:
     steps:
     - script:

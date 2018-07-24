@@ -56,15 +56,15 @@ inputs:
         AppCenter API Token can be obtained from [here]](https://appcenter.ms/settings/apitokens).
         New API Token > Enter a description for the token > Select Full Access > Add New API Token
       is_required: true
-  - deployment: 'Production'
+  - deployment: 'Staging'
     opts:
       title: Deployment
       description: |
-        Default deployments are `Staging` and `Production`. See [here](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/cli#deployment-management) for details.
+        This specifies which deployment you want to release the update to. This defaults to Staging, but when you're ready to deploy to Production, or one of your own custom deployments, just explicitly set this argument. See [here](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/cli#deployment-name-parameter) for details.
       is_required: true
   - options:
     opts:
       title: Extra Options
       description: |
-        Any extra options that you would like to concat to the release-react command
+        Any extra options that you would like to concat to the release-react command. Eg. "-m --disable-duplicate-release-error"
       is_required: false
