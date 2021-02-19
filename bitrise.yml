@@ -4,7 +4,7 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 app:
   envs:
   - BITRISE_STEP_ID: appcenter-codepush-release-react-native
-  - BITRISE_STEP_VERSION: 0.0.2
+  - BITRISE_STEP_VERSION: 0.0.3
   - BITRISE_STEP_GIT_CLONE_URL: https://github.com/adrianchinghc/bitrise-step-appcenter-codepush-release-react-native.git
   - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/adrianchinghc/bitrise-steplib.git
 
@@ -19,6 +19,7 @@ workflows:
         - app_id: $APPCENTER_APP_ID
         - react_native_project_root: $REACT_NATIVE_PROJECT_ROOT
         - deployment: $DEPLOYMENT_NAME
+        - description: $DESCRIPTION
   audit-this-step:
     steps:
     - script:

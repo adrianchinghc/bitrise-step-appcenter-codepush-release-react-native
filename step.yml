@@ -47,14 +47,13 @@ inputs:
       summary: AppCenter application identifier (Organization/Owner Name + App Name).
       description: |
         AppCenter Application Identifier is a combination of your Organization/Owner Name and an Application Name.
-        For example: "Upstack-Studio/bitrise-android"
+        For example: `Upstack-Studio/bitrise-android`
       is_required: true
   - api_token: $APPCENTER_API_TOKEN
     opts:
       title: AppCenter API Token
       description: |
-        AppCenter API Token can be obtained from [here]](https://appcenter.ms/settings/apitokens).
-        New API Token > Enter a description for the token > Select Full Access > Add New API Token
+        AppCenter API Token can be obtained from [here](https://appcenter.ms/settings/apitokens). `New API Token` > `Enter a description for the token` > `Select Full Access` > `Add New API Token`
       is_required: true
   - deployment: 'Staging'
     opts:
@@ -62,6 +61,12 @@ inputs:
       description: |
         This specifies which deployment you want to release the update to. This defaults to Staging, but when you're ready to deploy to Production, or one of your own custom deployments, just explicitly set this argument. See [here](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/cli#deployment-name-parameter) for details.
       is_required: true
+  - description:
+    opts:
+      title: Description
+      description: |
+        Specify an optional "change log" for the deployment.
+      is_required: false
   - options:
     opts:
       title: Extra Options
