@@ -49,6 +49,7 @@ inputs:
         AppCenter Application Identifier is a combination of your Organization/Owner Name and an Application Name.
         For example: `Upstack-Studio/bitrise-android`
       is_required: true
+      is_sensitive: true
   - api_token: $APPCENTER_API_TOKEN
     opts:
       title: AppCenter API Token
