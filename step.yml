@@ -68,6 +68,21 @@ inputs:
       description: |
         Specify an optional "change log" for the deployment.
       is_required: false
+
+  - percentage: 100
+    opts:
+      title: Rollout Percentage
+      description: |
+        It is the distribution percentage (0 - 100) of your new update in codepush, by default it is 100% of the users
+      is_required: true
+
+  - private_key: -k $APPCENTER_SIGN_PRIVATE_KEY
+    opts:
+      title: Signed update
+      description: |
+        To sign your new update in codepush, '$ APPCENTER_SIGN_PRIVATE_KEY' must be the one who stores your private key to sign
+      is_required: false
+
   - options:
     opts:
       title: Extra Options
